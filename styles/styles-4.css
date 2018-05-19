@@ -27,7 +27,7 @@ h2 { color: black; }
 h3 
 {
    
-    color: green
+    color: green;
 }
 
 table
@@ -49,7 +49,7 @@ th,td
 .subheading
 {
 	width: 50em;
-	margin-left: 8em;
+	margin-left: 1em;
 	margin-right: auto;
     font-size: 1.4em;
 }
@@ -95,12 +95,14 @@ th,td
 
 /* universal selectors */
 
+
 /* descendant selectors */
 
 .nav-menu ul
 {
 	margin: 0;
 	padding: 0;
+    
 }
 
 .nav-menu li
