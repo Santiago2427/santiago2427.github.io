@@ -1,0 +1,121 @@
+/* CSS RULES */
+
+/* type selectors */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: arial, helvetica, sans-serif;
+}
+
+header
+{
+	padding: 2em;
+	color: #fff;
+	background: #000;
+}
+
+footer
+{
+    margin-left: 2em;
+    padding: 2em;
+}
+
+h1 { margin: 0; }
+h2 { color: black; }
+h3 
+{
+   
+    color: green
+}
+
+table
+{
+	width: 40em;
+	border-collapse: collapse;
+}
+
+th,td
+{
+	padding: .5em;
+	text-align: left;
+    vertical-align: top;
+
+}
+
+/* class selectors */
+
+.subheading
+{
+	width: 50em;
+	margin-left: 8em;
+	margin-right: auto;
+    font-size: 1.4em;
+}
+.container
+{
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-menu
+{
+	padding: 1em 2em;
+	background: green;
+}
+
+.news
+{
+	 margin-bottom: -50px;
+    font-size: 1.2em;
+	color: gray;
+    background: #fff;
+}
+
+.footer-bar
+{
+	padding: 2em;
+    margin-left: 1em;
+    font-size: 1.2em;
+	color: gray;
+}
+
+/* ID selectors */
+
+#forecast10
+{
+	font-style: normal;
+    padding: 2em;
+	color: gray;
+	background: lightblue;
+}
+
+
+/* universal selectors */
+
+/* descendant selectors */
+
+.nav-menu ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu li
+{
+	display: inline;
+	margin-right: 1em;
+}
+
+.nav-menu li a { color: #fff; }
+
+/* child selectors */
+
+
+/* adjacent sibling selectors */
+
+
+/* link pseudo-class selectors */
+
