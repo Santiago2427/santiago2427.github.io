@@ -1,4 +1,3 @@
-@media screen and (min-width: 480px) {
 /** { box-sizing: border-box;}   This wildcard applies to all elements ensuring a box layout model */
 * {
   -webkit-box-sizing: border-box;
@@ -162,4 +161,3 @@ footer .contact {
     font-size: 1.2em;
     color: gray;
  }
-}
