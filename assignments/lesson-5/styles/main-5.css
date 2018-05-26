@@ -1,0 +1,139 @@
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+header, nav, main, footer { 
+    
+  max-width: 480px; 
+}
+
+
+header {
+    
+    padding: 2em;
+	color: #fff;
+	background: #000;
+}
+header h1 {
+    
+    margin: 0;
+}
+
+header .logo {
+    
+    float: left;
+    padding: 0 20px 20px 0;
+
+}
+
+header .subheading {
+    
+    width: 50em;
+	margin-left: 1em;
+	margin-right: auto;
+    font-size: 1.4em;
+}
+
+nav {}
+
+.navbar {
+    background-color: #055;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 1;
+    overflow: hidden;
+}
+ 
+.navbar li, .navbar a {
+    display: inline-block;  
+}
+ 
+.navbar li {
+    list-style-type: none;
+}
+ 
+.navbar > li {
+    margin-left: .25em;
+}
+ 
+.navbar > li:first-child {
+    margin-left: 0;
+}
+ 
+.navbar a {
+    padding: .25em;
+    text-decoration: none;
+    height: 1em;
+    font-weight: bold;  
+    color: #fff;
+}
+ 
+.navbar a:hover {
+    background-color: #088;
+}
+
+nav ul li.active a {}
+
+main .forecast{
+    
+    display: none;
+}
+
+.current {
+    
+    margin-left: .5em;
+    margin-bottom: 1em;
+}
+
+.symbol {
+    
+    position: absolute;
+    
+
+}
+
+.highlow {
+    
+     margin-left: .5em;
+    vertical-align:top;
+    display:inline-block;
+    text-align:center;
+}
+
+.conditions {
+    
+    text-align: center;
+}
+main h2, h3 {
+    
+     margin-left: .5em;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+.image-articulo {
+    
+    float: left;
+}
+
+footer {
+    
+    margin-left: 2em;
+    padding: 2em;
+}
+footer .contact {
+    
+    text-align: center;
+}
+.footer-bar {
+	padding: 2em;
+    margin-left: 1em;
+    font-size: 1.2em;
+	color: gray;
+}
