@@ -1,45 +1,39 @@
 @media only screen and (min-width: 37.5em) {
      
     section.forecast { display: inline-block; }  /* show the 10-day forecast with the medium view and up */
-}
-  /*}
-.navbar li, .navbar a {
-    display: inline-block;  
-}
- 
-.navbar li {
+
+ ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
- 
-.navbar > li {
-    margin-left: .25em;
+
+li {
+    float: left;
 }
- 
-.navbar > li:first-child {
-    margin-left: 0;
-}
- 
-.navbar a {
-    padding: .25em;
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    height: 1em;
-    font-weight: bold;  
-    color: #fff;
-}
- 
-nav ul li.active a {
-    
-    background-color: #222e50;
 }
 
-.navbar a:hover {
-    background-color: #088;
-}*/
+li a:hover {
+    background-color: #111;
+}
 
-.forecast td, .forecast th
-{
+.active {
+    background-color: #4CAF50;
+}
+
+.forecast td, .forecast th {
 	padding: .5em;
 	text-align: center;
     vertical-align: top;
 
+ }
 }
