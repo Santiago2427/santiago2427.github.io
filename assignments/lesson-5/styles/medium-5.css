@@ -1,15 +1,7 @@
 @media only screen and (min-width: 37.5em) {
- 
-  .navbar.responsive {position: relative;}
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-    
+     
     section.forecast { display: inline-block; }  /* show the 10-day forecast with the medium view and up */
-
+}
   /*}
 .navbar li, .navbar a {
     display: inline-block;  
