@@ -29,6 +29,7 @@ header h1 {
     position: relative;
     font-size: 1.8em;
     margin: 0px;
+    f
         
 }
 
@@ -41,12 +42,10 @@ header .logo {
 
 header .subheading {
 
-    margin-top: 0;
-    margin-bottom: 1;
-   /* width: 50em;
+    width: 50em;
 	margin-left: 1em;
 	margin-right: auto;
-    font-size: 1.4em;*/
+    font-size: 1.4em;
 }
 
 nav button {
@@ -155,7 +154,7 @@ footer {
     padding: 2em;
 }
 footer .contact {
-    margin-bottom: 1em;
+    margin-bottom: 1.8em;
     text-align: center;
 }
 .footer-bar {
