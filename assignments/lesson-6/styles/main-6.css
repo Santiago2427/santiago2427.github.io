@@ -1,0 +1,176 @@
+/** { box-sizing: border-box;}   This wildcard applies to all elements ensuring a box layout model */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 400, 800;
+}
+
+/*header, nav, main, footer { 
+    
+  /*max-width: 500px;
+  padding: 20px;*/
+  
+    
+}
+
+
+header {
+    
+    padding: .5rem 2%;
+
+}
+header h1 {
+        
+    font-weight: normal;
+    /*margin: 1 0;*/
+    position: relative;
+    font-size: 1.8em;
+    margin: 0px;
+        
+}
+
+header .logo {
+    
+    float: left;
+    margin: 1 2% 0 0;
+  
+}
+
+header .subheading {
+
+    margin-top: 0;
+    margin-bottom: 1;
+   /* width: 50em;
+	margin-left: 1em;
+	margin-right: auto;
+    font-size: 1.4em;*/
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: #87ceeb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+        
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,255,0.3)
+        
+}
+
+nav ul li a:active {
+    background-color: rgba(0,0,255,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,255,0.4);
+}
+
+nav ul.hide {display: none;}
+
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main figure.intro {width: 50%; margin: 0;}
+main figure.intro img {width: 100%;}
+
+main .image-article {
+    
+    float:left;
+    overflow: auto;
+    margin: auto;
+    padding: 15px;
+}
+
+section.forecast{
+    
+    display: none;
+}
+
+.current {
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+main picture img{
+    
+    margin-left: auto;
+    
+
+}
+
+.highlow {
+    
+     display: flex;
+    flex-flow: column;
+}
+
+.conditions {
+    
+    display: flex;
+    flex-flow: column;
+}
+main h2, h3 {
+    
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.2em;
+     margin-left: .5em;
+}
+
+article {
+    
+    margin-top: 1em;
+    border-style: solid;
+    border-width: thin
+}
+
+footer {
+        
+    margin-left: 2em;
+    padding: 2em;
+}
+footer .contact {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.footer-bar {
+    
+    background-color: azure;
+    display: inline;
+    width: 100%; 
+	padding: 10px;
+    margin:auto;
+    font-size: 1.2em;
+    color: gray;
+ }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

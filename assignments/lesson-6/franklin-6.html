@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlueSky Weather</title>
+    <meta name="description" content="Weather forecast for the City of Franklin">
+    <link rel="icon" type="image/png" href="images/myicon.png">
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/main-6.css"/>
+    <link rel="stylesheet" href="styles/medium-6.css"/>   
+    <link rel="stylesheet" href="styles/large-6.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    
+</head>
+<body>
+
+  <header class="clearfix">
+      <figure class="logo"> 
+      <img src="images/bluesky1.png" alt="Site Logo" srcset="images/bluesky2.png, images/bluesky3.png">
+      </figure>
+      <h1>BlueSky Weather</h1>
+      <h2>"We are serious about the Weather"</h2>
+  </header>
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="smallNav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+      
+ </nav>
+    
+  <main>
+    <h2>City of Franklin</h2>
+    <figure class="intro">
+        <img src="images/franklin-large.jpg" alt="Sunny landscape" sizes="100vw" 
+             srcset="images/franklin-small.jpg 500w, 
+                     images/franklin-medium.jpg 800w, 
+                     images/franklin-large.jpg 1100w">
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>
+        
+      <div class="highlow">
+        <p>High: 90&deg;F</p>  
+        <p>Low: 66&deg;F</p>  
+      </div>
+      <div class="current">
+        Sunny
+        <picture>
+            <img src="images/sunny.jpg" width="80" alt="Shining Sun" class="symbol">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	   </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	   </tbody>
+      </table>
+    </section>
+      
+    <article class="clearfix">
+      <h3>Intense Heatwaves could be far far more frequent.</h3>
+        <figure class="image-article"> 
+        <img src="images/carnival-carousel.jpg" width="300" alt="ferris wheel" >
+        </figure>
+      <p class="town-article">
+           "More extreme heatwaves would have profound impacts on human health as well as the state's economy," Milrad said. "Heatwaves are a silent killer, claiming hundreds of thousands of lives each year, yet we tend to focus more on the risks associated with sudden, dramatic events such as hurricanes." In May 2015, for example, temperatures as high as 117 degrees Fahrenheit swept across India, causing widespread power outstands and killing at least 2,500 people.
+      </p>
+        
+      <p>
+          For the time period 2070 to 2099, if atmospheric concentrations of carbon dioxide -- a key greenhouse gas -- reach two to three times the current level of 410 parts per million, heatwaves would also get hotter, rising roughly 7 to 10 degrees Fahrenheit (4 to 6 degrees Celsius).
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside class="contact">
+      BlueSky Weather
+        <br>
+      123 Main St.
+        <br>
+     Anytown, US 99999
+        <br>
+     (999)-999-9999
+     
+    </aside>
+    <aside class="footer-bar">&copy; 2018 | All Rights Reserved | BlueSky Weather | <span id="currentdate">Current Date Placeholder</span>
+    </aside>
+  </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+ </body>
+    
+</html>

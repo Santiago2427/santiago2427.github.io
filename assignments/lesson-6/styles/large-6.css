@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em) {
+    
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+    
+    nav ul li a { padding: .6rem 1rem;}
+    
+    main figure.intro {width: 100%; margin: 0;}
+    main figure.intro img {width: 100%;}
+    
+  
+  }
