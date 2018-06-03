@@ -40,11 +40,15 @@
     section.forecast { display: inline-block; }  /* show the 10-day forecast with the medium view and up */
 
     .forecast td, .forecast th {
-	padding: .5em;
-	text-align: center;
-    vertical-align: top;
-    border-style: solid;
-    border-width: thin
+        padding: .5em;
+        text-align: center;
+        vertical-align: top;
+        border-style: solid;
+        border-width: thin;
 
  }
+    .footer-bar {
+        display: inline;
+    }
+    
 }
