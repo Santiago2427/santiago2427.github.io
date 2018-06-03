@@ -67,8 +67,8 @@ nav ul li a {
 }
 
 nav ul li .active a{
-    background-color: rgba(0,0,255,0.2);
-    color: #fff;
+    background-color: rgba(0,0,255,0.5);
+    
 }
 
 nav ul li a:hover {
@@ -150,8 +150,8 @@ footer .contact {
 .footer-bar {
     
     background-color: azure;
-    display: inline;
-    width: 100%; 
+    display: block;
+    width: 50%; 
 	padding: 10px;
     margin:auto;
     font-size: 1.2em;
