@@ -62,6 +62,7 @@ nav {
 }
 
 nav ul {
+   
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -86,7 +87,7 @@ nav ul li .active a{
     
 }
 
-nav ul.hide {display: none;}
+nav ul .hide {display: none;}
 
 
 main {
@@ -100,6 +101,7 @@ main {
     grid-template-columns: auto;
 }
 
+main div .container .gallery figcaption {text-align-last: center;}
 main figure.intro {width: 50%; margin: 0;}
 main figure.intro img {width: 100%;}
 
