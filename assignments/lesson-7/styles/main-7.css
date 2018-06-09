@@ -97,13 +97,15 @@ main {
 
 .gallery {
     
-    display: grip;
     grid-template-columns: auto;
 }
 
-figcaption {text-align: center;}
-/*main figure.intro {width: 50%; margin: 0;}
-main figure.intro img {width: 100%;}*/
+main div h5 {
+    display: flex;
+    justify-content: center;
+}
+main figure.intro {width: 50%; margin: 0;}
+main figure.intro img {width: 100%;}
 
 main .image-article {
     
@@ -163,7 +165,7 @@ footer {
 	height:150px;
     border-top:10px solid #EDEAE5;
 	font-weight:bold;
-	font-weight:.8em;
+	/*font-weight:.8em;*/
     
 }     
  /*   margin-left: 2em;
