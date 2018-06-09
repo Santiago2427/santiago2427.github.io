@@ -1,7 +1,6 @@
 /* eslint-env browser */
 var temp = 90;
 var windSpeed = 5;
-var relativehum = 40;
 if(temp <= 50) {
     /*Windchill Calculator*/
     var wind2 = Math.pow(windSpeed,0.16);
@@ -11,6 +10,7 @@ if(temp <= 50) {
 }
 else {
     /*Heat Index Calculator*/
+    var relativehum = 40;
     var c1 = -42.379;
     var c2 = 2.04901523;
     var c3 = 10.14333127;

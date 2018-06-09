@@ -102,8 +102,8 @@ main {
 }
 
 figcaption {text-align: center;}
-main figure.intro {width: 50%; margin: 0;}
-main figure.intro img {width: 100%;}
+/*main figure.intro {width: 50%; margin: 0;}
+main figure.intro img {width: 100%;}*/
 
 main .image-article {
     
