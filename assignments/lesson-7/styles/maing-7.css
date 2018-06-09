@@ -1,0 +1,141 @@
+/** { box-sizing: border-box;}   This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+}
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 2%;
+
+}
+header h1 {
+    
+    
+    font-weight: 800;
+    /*margin: 1 0;*/
+    position: relative;
+    font-size: 1.8em;
+    margin: 0px;
+            
+}
+
+header .logo {
+    
+    /*float: left;*/
+    flex: 0 1 128px;
+    text-align: center;
+    margin: 1rem 2% 0 0;
+  
+}
+
+header .heading {
+
+    flex: auto;
+ /* for the children h1, h2 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*width: 50em;
+	margin-left: 1em;
+	margin-right: auto;
+    font-size: 1.4em;*/
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: #87ceeb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+        
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,255,0.3)
+        
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,255,0.4);
+}
+
+nav ul li .active a{
+    background-color: red;
+    
+}
+
+nav ul.hide {display: none;}
+
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+.gallery {
+    
+    display: grip;
+    grid-template-columns: auto;
+}
+
+main figure.intro {width: 50%; margin: 0;}
+main figure.intro img {width: 100%;}
+
+
+footer {
+   
+	height:150px;
+    background-color: rgb(245,245,245);
+	border-top:10px solid #EDEAE5;
+	font-weight:bold;
+	font-weight:.8em;
+    
+}     
+ /*   margin-left: 2em;
+    padding: 2em;
+}*/
+
+footer .contact {
+    
+    margin-top: 1em;
+    margin-left: 20px;
+    margin-bottom: 1.8em;
+    text-align: left;
+}
+.footer-bar {
+    
+    display: block;
+    width: 50%; 
+	padding: 10px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: gray;
+ }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
