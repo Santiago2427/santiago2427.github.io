@@ -37,6 +37,18 @@
         padding: .8rem 1rem;
     }
     
+    .container {
+    
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 20px;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+    
+}
+    
     section.forecast { display: inline-block; }  /* show the 10-day forecast with the medium view and up */
 
     .forecast td, .forecast th {
@@ -47,8 +59,8 @@
         border-width: thin;
     }
 
- .footer-bar {
-        display: flex;
+   .footer-bar {
+        display: flex; 
         flex-direction: row;
     }
     

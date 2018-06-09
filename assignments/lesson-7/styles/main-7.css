@@ -12,17 +12,18 @@ header {
     
     display: flex;
     flex-direction: row;
-    padding: .5rem 2%;
+    margin: 10px auto;
+    /*padding: .5rem 2%;*/
 
 }
 header h1 {
     
     
-    font-weight: 800;
+    font-weight: 700;
     /*margin: 1 0;*/
     position: relative;
     font-size: 1.8em;
-    margin: 0px;
+    margin: .25rem;
             
 }
 
@@ -31,7 +32,7 @@ header .logo {
     /*float: left;*/
     flex: 0 1 128px;
     text-align: center;
-    margin: 1rem 2% 0 0;
+    /*margin: 1rem 2% 0 0;*/
   
 }
 
@@ -94,6 +95,13 @@ main {
     min-height: 10rem;
 }
 
+.gallery {
+    
+    display: grip;
+    grid-template-columns: auto;
+}
+
+figcaption {text-align: center;}
 main figure.intro {width: 50%; margin: 0;}
 main figure.intro img {width: 100%;}
 
@@ -172,6 +180,7 @@ footer .contact {
 .footer-bar {
     
     display: flex;
+    flex-wrap: wrap;
     width: 100%; 
 	padding: 10px;
     margin-left: 20px;
