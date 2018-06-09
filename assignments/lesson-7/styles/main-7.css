@@ -77,7 +77,7 @@ nav ul li a {
         
 }
 
-nav ul li .active a{
+nav ul li.active a{
     background-color: rgba(0,0,255,0.5);
     
 }
@@ -153,8 +153,7 @@ article {
 footer {
    
 	height:150px;
-    background-color: rgb(245,245,245);
-	border-top:10px solid #EDEAE5;
+    border-top:10px solid #EDEAE5;
 	font-weight:bold;
 	font-weight:.8em;
     
@@ -172,8 +171,8 @@ footer .contact {
 }
 .footer-bar {
     
-    display: block;
-    width: 50%; 
+    display: flex;
+    width: 100%; 
 	padding: 10px;
     margin-left: 20px;
     font-size: 1.2em;

@@ -23,12 +23,12 @@
     
     nav button {display: none}
     
-    nav ul.hide {display: block;}
+    nav ul.hide {display: flex;}
     
     nav ul {margin-left: 2%}
     
     nav ul li { 
-        float: left;
+        /*float: left;*/
     }
     
     nav ul li a {
@@ -45,10 +45,11 @@
         vertical-align: top;
         border-style: solid;
         border-width: thin;
+    }
 
- }
-    .footer-bar {
-        display: inline;
+ .footer-bar {
+        display: flex;
+        flex-direction: row;
     }
     
 }

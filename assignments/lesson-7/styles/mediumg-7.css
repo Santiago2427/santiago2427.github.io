@@ -23,14 +23,12 @@
     
     nav button {display: none}
     
-    nav ul .hide {display: flex;}
+    nav ul.hide {display: flex;}
     
     nav ul {margin-left: 2%}
     
     nav ul li { 
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
+        
         /*float: left;*/
     }
     
@@ -39,6 +37,11 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 1rem;
     }
+    
+    /*nav .menu{
+        display: flex;
+        flex-direction: row;
+    }*/
     
     .container {
     
