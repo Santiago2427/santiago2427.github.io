@@ -159,6 +159,15 @@ form label.top input, form label.top select {
     background-color: rgba(0,0,0,0.1);
 }
 
+.textinput{
+    float:left;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    
+}
+
 form label.sbs {
     display: block;
     padding: .75rem 0;
