@@ -1,23 +1,29 @@
-table {
+body{
     font-family: ubuntu, sans-serif;
+    
+}
+
+table {
+    
     border-collapse: collapse;
     width: 75%;
     margin:1em auto;
+    box-shadow: 5px 10px 15px #628ca6;
     
 }
-    
+tbody td,
+
 .tallwide{
     width: 25%;
-    box-shadow: 5px 10px 15px #628ca6;
+
     }
-caption {
-    border: 1px solid black;
+thead tr td {
     font-size: 1.5em;
     font-weight: bold;
     padding: 8px;
     background-color: #7fb9c2;
     
-    }
+}
 
 td, th {
     border: 1px solid black;
@@ -26,10 +32,10 @@ td, th {
     
 }
     
-.test {
+/*.test {
     background-color: #628ca6;
     color: #fff;
-    }
+    }*/
 
  th {
      background-color: #628ca6;
@@ -43,6 +49,13 @@ tr:nth-child(even) {
 tbody tr:nth-child(odd) {
           background-color: #e7f0ed;
 }
+
+tbody tr:nth-child(5) td:nth-child(3){
+          background-color: #628ca6;
+          color: #fff;
+}
+
+
 tfoot {
     background-color: #7fb9c2;
     }

@@ -28,5 +28,9 @@
     
     main figure.intro {width: 100%; margin: 0;}
     main figure.intro img {width: 100%;}
+    
+    form label.sbs {
+        padding: .4rem 0;
+    }
      
   }

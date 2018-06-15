@@ -29,7 +29,7 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="smallNav" class="hide">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Franklin</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li class="active"><a href="stormcenter-8.html">Storm Center</a></li>
@@ -39,6 +39,52 @@
         </nav>
 
         <main>
+            <h1>Course Proposal Application</h1>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Application Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>
+                        <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@example.com" required></label>
+                        <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>course Information</legend>
+                        <div>Audience</div>
+                        <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
+                        <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+                        <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
+                        
+                        <div>Software Needed</div>
+                        <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                        <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
+                        <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                        <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Funding</legend>
+                            <label class="top">Anticipated Completion Date <input type="date" name="completedate"></label>
+                            <label class="top">Course subject
+                                <select name="subject">
+                                    <option value="">Please Select </option>
+                                    <option value="software">software development</option>
+                                    <option value="creative">Creative Professional</option>
+                                    <option value="info">Information Technology</option>
+                                    <option value="data">Data Mining</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="business">Business Professional</option>
+                                </select>
+                            </label>
+                        <label class="top">How many Authors <input type="number" name="author"></label>
+                    </fieldset>
+                    
+                    <input type="submit" value="Propuse my course" class="submitBtn">
+                    
+            </form>
 
         </main>
 
