@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BlueSky Weather</title>
-        <meta name="description" content="Weather forecast for the City of Franklin">
+        <meta name="description" content="Weather reporting page">
         <link rel="icon" type="image/png" href="images/myicon.png">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css"/>
@@ -39,50 +39,98 @@
         </nav>
 
         <main>
-            <h1>Course Proposal Application</h1>
-                <form method="get" action="thankyou.html">
+            <h1>Volunteers Storm Weather Report</h1>
+                <form method="get" action="thankyou.html" id="wrform">
                     <fieldset>
-                        <legend>Application Information</legend>
-                        <label class="top">First Name* <input type="text" name="fname" required></label>
-                        <label class="top">Last Name* <input type="text" name="lname" required></label>
-                        <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <legend>Information about you</legend>
+                        <label class="top">Full Name* <input type="text" name="fname" required></label>
+                        <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
                         <label class="top">Email* <input type="email" name="email" placeholder="someone@example.com" required></label>
-                        <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>course Information</legend>
-                        <div>Audience</div>
-                        <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
-                        <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
-                        <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
                         
-                        <div>Software Needed</div>
-                        <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                        <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                        <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                        <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
                     </fieldset>
                     
                     <fieldset>
-                        <legend>Funding</legend>
-                            <label class="top">Anticipated Completion Date <input type="date" name="completedate"></label>
-                            <label class="top">Course subject
-                                <select name="subject">
+                        <legend>Location and type of Weather Event</legend>
+                        <label class="top">Zip Code <input type="number" name="zcode" required></label>
+                        <label class="top">Date of Event<input type="date" name="eventdate"></label>
+                        <label class="top">Weather Event
+                                <select name="eventweather">
                                     <option value="">Please Select </option>
-                                    <option value="software">software development</option>
-                                    <option value="creative">Creative Professional</option>
-                                    <option value="info">Information Technology</option>
-                                    <option value="data">Data Mining</option>
-                                    <option value="construction">Construction</option>
-                                    <option value="manufacturing">Manufacturing</option>
-                                    <option value="business">Business Professional</option>
+                                    <option value="snow">Snow/Ice</option>
+                                    <option value="rain">Flooding</option>
+                                    <option value="severe">Hail/Tornado</option>
+                                    <option value="wind">Strong Winds</option>
+                                    <option value="lightining">Lightning Hit</option>
+                                    <option value="mudslice">Severe Mudslice</option>
                                 </select>
                             </label>
-                        <label class="top">How many Authors <input type="number" name="author"></label>
+                        <label class="top">Storm Region
+                                <select name="region">
+                                    <option value="">Please Select a Region</option>
+                                    <option value="snow">Franklin</option>
+                                    <option value="rain">Greenville</option>
+                                    <option value="severe">Springfield</option>
+                                </select>
+                            </label>
                     </fieldset>
                     
-                    <input type="submit" value="Propuse my course" class="submitBtn">
+                    <fieldset>
+                        <legend>Weather Event Detail Information</legend>
+                        
+                        <div>Storm Severity</div>
+                        <label class="top" for="rating">Rating (1 to 10)</label>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br>
+                        
+                        <div>People in-danger level</div>
+                        <label class="sbs"><input type="radio" name="people" value="yes">Yes</label>
+                        <label class="sbs"><input type="radio" name="people" value="no">No</label>
+                        <label class="sbs"><input type="radio" name="people" value="maybe">Maybe</label>
+                        
+                        <h5>***Description***</h5>
+                        <div>Snow/Ice</div>
+                        <label class="sbs"><input type="radio" name="snow_ice" value="freezing">Freezing Rain</label>
+                        <label class="sbs"><input type="radio" name="snow_ice" value="sleet">Sleet</label>
+                        <label class="sbs"><input type="radio" name="snow_ice" value="black">Black ice</label>
+                        
+                        <div>Precipitation/Flooding</div>
+                        <label class="sbs"><input type="radio" name="flood" value="floodedabove">Flooded road - water above 6"</label>
+                        <label class="sbs"><input type="radio" name="flood" value="floodedbelow">Flooded road - water below 6"</label>
+                        <label class="sbs"><input type="radio" name="flood" value="floodedriver">River/Creek over its bank</label>
+                        
+                        <div>Hail/Tornado</div>
+                        <label class="sbs"><input type="radio" name="hail" value="hailsmall">Hail size - small</label>
+                        <label class="sbs"><input type="radio" name="hail" value="hailbig">Hail size - big</label>
+                        <label class="top">Tornado
+                                <select name="tornado">
+                                    <option value="">Please Select </option>
+                                    <option value="notrotating">Wall cloud (not rotating)</option>
+                                    <option value="rotating">Wall cloud (rotating)</option>
+                                    <option value="funnel">Funnel cloud</option>
+                                    <option value="tail">beaver's tail</option>
+                                    <option value="spout">Water spout</option>
+                                    <option value="bands">Inflow bands</option>
+                                </select>
+                            </label>
+                        
+                        <div>Strong Winds</div>
+                        <label class="sbs"><input type="checkbox" name="tree" value="yes">Downed tree(s)</label>
+                        <label class="sbs"><input type="checkbox" name="pole" value="yes">Downed utility pole(s)</label>
+                        <label class="sbs"><input type="checkbox" name="line" value="yes">Downed utility line(s)</label>
+                        <label class="sbs"><input type="checkbox" name="roof" value="yes">House roof blowoff</label>
+                        
+                        <div>Lightning Hits</div>
+                        <label class="sbs"><input type="checkbox" name="hit" value="yes">Power outage</label>
+                        
+                        <div>Severe Mudslice</div>
+                        <label class="sbs"><input type="checkbox" name="mud" value="yes">Casualties/Road cover</label>
+                        
+                        <div>Please Comment with any additional information</div>
+                        <label class="top"><textarea rows="4" cols="50" name="comment" form="wrform"></textarea></label>
+                        
+                    </fieldset>
+                    
+                    <input type="submit" value="Send My Report" class="submitBtn">
                     
             </form>
 
@@ -103,6 +151,7 @@
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
             <script src="scripts/windchill.js"></script>
+            <script src="scripts/rating.js"></script>
     </body>
     
 </html>
