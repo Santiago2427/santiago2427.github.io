@@ -40,10 +40,12 @@
 
         <main>
             <h2>City of Franklin</h2>
-             <figure class="intro">
-                <img src="images/franklin.jpg" alt="Sunny landscape" sizes="100vw" 
-                     srcset="images/franklin-small.jpg 500w, images/franklin-medium.jpg 800w, images/franklin-large.jpg 1100w">
-            </figure>
+             <picture class="intro">
+                <source media="(max-width: 500px)" srcset="images/franklin-small.jpg"> 
+                <source media="(max-width: 800px)" srcset="images/franklin-medium.jpg"> 
+                <source media="(max-width: 1100px)" srcset="images/franklin-large.jpg">
+                <img src="images/franklin-large.jpg" alt="Sunny landscape"> 
+             </picture>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
 
@@ -99,17 +101,14 @@
             </section>
 
             <article class="clearfix">
-                <h3>Intense Heatwaves could be far far more frequent.</h3>
+                <h3>Intense Heatwaves Could Be Far Far More Frequent.</h3>
                     <figure class="image-article"> 
                         <img src="images/carnival.jpg" alt="ferris wheel" >
                     </figure>
                 <p class="town-article">
-                    "More extreme heatwaves would have profound impacts on human health as well as the state's economy," Milrad said. "Heatwaves are a silent killer, claiming hundreds of thousands of lives each year, yet we tend to focus more on the risks associated with sudden, dramatic events such as hurricanes." In May 2015, for example, temperatures as high as 117 degrees Fahrenheit swept across India, causing widespread power outstands and killing at least 2,500 people.
+                    "More extreme heatwaves would have profound impacts on human health as well as the state's economy," Milrad said. "Heatwaves are a silent killer, claiming hundreds of thousands of lives each year, yet we tend to focus more on the risks associated with sudden, dramatic events such as hurricanes." In May 2015, for example, temperatures as high as 117 degrees Fahrenheit swept across India, causing widespread power outstands and killing at least 2,500 people. For the time period 2070 to 2099, if atmospheric concentrations of carbon dioxide -- a key greenhouse gas -- reach two to three times the current level of 410 parts per million, heatwaves would also get hotter, rising roughly 7 to 10 degrees Fahrenheit (4 to 6 degrees Celsius).
                 </p>
-
-                <p>
-                    For the time period 2070 to 2099, if atmospheric concentrations of carbon dioxide -- a key greenhouse gas -- reach two to three times the current level of 410 parts per million, heatwaves would also get hotter, rising roughly 7 to 10 degrees Fahrenheit (4 to 6 degrees Celsius).
-                </p>
+                
             </article>		  
 
         </main>
