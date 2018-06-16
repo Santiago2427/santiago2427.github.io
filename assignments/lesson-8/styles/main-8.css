@@ -311,7 +311,14 @@ form label.top input:required:valid {
 
 /********thankyoucss*********/
 
- 
+.approve p {
+    display: flex;
+    
+   
+    
+}
+
+
 .thk { 
     
     display: block;
@@ -341,10 +348,3 @@ form label.top input:required:valid {
     
 }
 
-figure img .check  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    
-}
