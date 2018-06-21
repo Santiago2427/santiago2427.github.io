@@ -1,0 +1,135 @@
+/* || general styles */
+
+html {
+    
+  font-family: 'Bangers', cursive;  
+  /*font-family: 'helvetica neue', helvetica, arial, sans-serif;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+    
+   width: 800px;
+   margin: 0 auto;
+}
+
+/* header styles */
+
+h1 {
+    
+    transform: rotate(2deg);
+    margin:15px;
+    margin-top: 50px;
+    padding:0 5px;
+    background:#ddd;
+    border:1px solid #222;
+    box-shadow:3px 3px 0 #222;  
+    font-size: 5rem;
+    text-align: center;
+}
+
+ h1 {
+   -webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate
+{
+	0%   { color: #FFFF00; text-shadow: 0 -1px 0 #FF0000; }
+	50%  { color: #0000FF; text-shadow: 0 -1px 0 #008000, 0 0 5px #FF5733, 0 0 8px #FF0000; }
+	100% { color: #FFFF00; text-shadow: 0 -1px 0 #FF0000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #FFFF00; text-shadow: 0 -1px 0 #FF0000; }
+	50%  { color: #0000FF; text-shadow: 0 -1px 0 #008000, 0 0 5px #FF5733, 0 0 8px #FF0000; }
+	100% { color: #FFFF00; text-shadow: 0 -1px 0 #FF0000; }
+}
+
+
+header p {
+    
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #0000FF;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a, 
+      -5px 10px 1px #7f7d7d, 
+      -6px 12px 1px #828181, 
+      -7px 14px 1px #868585, 
+      -8px 16px 1px #8b8a89, 
+      -9px 18px 1px #8f8e8d, 
+      -10px 20px 1px #949392; 
+        
+}
+
+h2 {
+  
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* section styles */
+
+section article {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-image: url("images/superbck4.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+       
+}
+
+section article p, ul{
+    
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+section p {
+    
+    margin: 5px 0;
+}
+
+section ul {
+    
+    margin-top: 0;
+}
+
+section article h2 {
+    
+    font-size: 3rem;
+    font: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    background-image: url("images/star-explosion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-animation: flame2 .7s linear infinite;
+    
+       
+}
