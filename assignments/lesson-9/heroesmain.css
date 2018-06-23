@@ -18,6 +18,10 @@ body {
    margin: 0 auto;
 }
 
+body a.back {
+    margin-bottom: 20px;
+}
+
 /* header styles */
 
 h1 {
@@ -133,3 +137,4 @@ section article h2 {
     
        
 }
+

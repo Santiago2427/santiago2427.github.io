@@ -46,28 +46,27 @@
                 <source media="(max-width: 1100px)" srcset="images/franklin-large.jpg">
                 <img src="images/franklin-large.jpg" alt="Sunny landscape"> 
              </picture>
+            <h2>Weather Summary</h2>
             <section class="weather-summary">
-                <h3>Weather Summary</h3>
-
-                <div class="highlow">
-                    <p>High: 90&deg;F</p>  
-                    <p>Low: 66&deg;F</p>  
-                </div>
+                
                 <div class="current">
-                    Sunny
+                    <p class="banner">Today Weather conditions</p>
+                    <p class="describe"><span id="detail"> description placeholder</span></p>
                     <picture>
-                    <img src="images/sunny.jpg" width="80" alt="Shining Sun" class="symbol">
+                    <img src="images/placeholder.png" alt="Shining Sun" class="symbol" id="weather_icon">
                     </picture>
-                </div>   
-                <div class="conditions">
-                    <p>Precipitation: 0%</p>  
-                    <p>Wind Speed: 5 mph SW</p>
-                    <p>Feels like: <span id="windchill">Feels like Placeholder</span></p>
+                    <p class="ctemp"><span class="today" id="currentTemp">Current temp Placeholder</span><sup>&deg;F</sup></p>
+                    <p class="feel">Feels like: <span id="windchill">Feels like Placeholder</span></p>
+                    <p class="temph">High: <span id="highT">High temp Placeholder</span>&deg;</p>  
+                    <p class="templ">Low: <span id="lowT">Low temp Placeholder</span>&deg;</p>  
+                    <p class="prec">Precipitation: 0%</p>  
+                    <p class="wind">Wind Speed: <span id="wSpeed">Low temp Placeholder</span> mph</p>
+                    
                 </div>           
             </section>
-
+            
             <section class="forecast">
-                <h3>Ten Day Forecast</h3>
+                <h2>Ten Day Forecast</h2>
                 <table>
                     <thead>
                         <tr>
@@ -101,7 +100,7 @@
             </section>
 
             <article class="clearfix">
-                <h3>Intense Heatwaves Could Be Far Far More Frequent.</h3>
+                <h2>Intense Heatwaves Could Be Far Far More Frequent.</h2>
                     <figure class="image-article"> 
                         <img src="images/carnival.jpg" alt="ferris wheel" >
                     </figure>
@@ -128,6 +127,8 @@
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
             <script src="scripts/windchill.js"></script>
+            <script src="scripts/weather.js"></script>
+            <script src="scripts/franklindata.js"></script>
     </body>
     
 </html>

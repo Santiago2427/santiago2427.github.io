@@ -6,12 +6,16 @@
     overflow-x: hidden;
 }
 
+/************Body****************/
+
 body {
   margin: 0;
   font-size: 16px;
   font-family: 'Noto Serif', serif;
   font-weight: 400;
 }
+
+/************Header****************/
 
 header {
     
@@ -21,6 +25,7 @@ header {
     /*padding: .5rem 2%;*/
 
 }
+
 header h1 {
        
     font-weight: 700;
@@ -59,6 +64,7 @@ header .heading h2 {
     position: relative;
 }
 
+/************Nav****************/
 
 nav button {
     margin: .2rem 2%;
@@ -99,6 +105,7 @@ nav ul li a:hover {
 
 nav ul.hide {display: none;}
 
+/************Main****************/
 
 main {
     padding: 0 2%;
@@ -114,13 +121,14 @@ main div h5 {
     display: flex;
     justify-content: center;
 }
+
 /*main picture.intro {width: 50%; margin: 0;}*/
 main picture.intro img {width: 100%;}
 
 main .image-article {
     
     float:left;
-    overflow: auto;
+    overflow: hidden;
     margin: auto;
     padding: 15px;
 }
@@ -136,11 +144,73 @@ section.forecast{
     display: none;
 }
 
+section.weather-summary h3 {
+    color: black;
+    background: none;
+    
+}
+
+section.weather-summary {
+   
+    grid-template-columns: auto;
+    background: #fff;
+       
+}
+
+section.weather-summary p {
+    
+    margin-left: 10px;
+}
+
+section.weather-summary div img {
+    margin-left: 10px;
+}
+
+section.weather-summary article {
+     border: 1px solid black;
+     border-radius: 8px;
+}
+ 
 .current {
     
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    border: 1px solid black;
+    border-radius: 8px;
     
+    
+}
+
+sup {
+    
+    vertical-align: text-top;
+    font-weight: 700;
+}
+
+span.today  {
+    
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+p.banner {
+    margin-left: 10px;
+}
+
+P.ctemp {
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+p.feel {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+p.describe {
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 
 main picture img{
@@ -152,15 +222,38 @@ main picture img{
 
 .highlow {
     
+    
      display: flex;
     flex-flow: column;
 }
 
+p.temph {
+    
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+p.templ {
+    
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+p.prec {
+    margin-left: 10px;
+}
+
+p.wind {
+    margin-left: 10px;
+}
+
 .conditions {
     
+    margin-left: 10px;
     display: flex;
     flex-flow: column;
 }
+
 main h2, h3 {
     
     font-family: arial, helvetica, sans-serif;
@@ -173,8 +266,11 @@ article {
     margin-top: 1em;
     margin-bottom: 1em;
     border-style: solid;
-    border-width: thin
+    border-width: thin;
+    border-radius: 8px;
 }
+
+/************Footer****************/
 
 footer {
    
@@ -195,6 +291,7 @@ footer .contact {
     margin-bottom: 1.8em;
     text-align: left;
 }
+
 .footer-bar {
     
     display: flex;
@@ -205,6 +302,8 @@ footer .contact {
     font-size: 1.2em;
     color: gray;
  }
+
+/************Clearfix Hack****************/
 
 .clearfix:after {
     content: "";
@@ -349,7 +448,6 @@ form label.top input:required:valid {
     
 }
 
-
 .thk { 
     
     display: block;
@@ -377,3 +475,38 @@ form label.top input:required:valid {
         100% { color: #FF0000; text-shadow: 0 -1px 0 #000; }
     }
     
+/********homecss*********/
+
+section.info {
+      
+    grid-template-columns: auto;
+    
+}
+
+section.info p {
+    
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+        
+}
+
+section.info article {
+    
+    border: 3px solid blue;
+    border-radius: 6px;
+    background-image: url("../images/townimage3.jpg");
+    
+}
+
+section.info article h3 {
+    
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    
+}
+
+main {
+    overflow: hidden;
+}
+
