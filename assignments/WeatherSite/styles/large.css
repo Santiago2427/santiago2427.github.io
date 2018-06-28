@@ -1,0 +1,52 @@
+@media only screen and (min-width: 64em) {
+    
+    main {
+        max-width: 64rem;
+        margin: auto;
+    }
+    
+    nav ul li a { padding: .6rem 1rem;}
+    
+    .container {
+    
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        /*display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+    
+}
+    .gallery:hover {
+        box-shadow: 5px 10px 15px red;
+        
+    }
+    
+    main figure.intro {width: 100%; margin: 0;}
+    main figure.intro img {width: 100%;}
+    
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    
+    section.weather-summary {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-gap: 20px;
+}
+
+   section.info {
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+    
+    section.info article:hover {
+        box-shadow: 5px 10px 15px blue;
+    }
+     
+  }
