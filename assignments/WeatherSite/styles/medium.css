@@ -61,11 +61,15 @@
 }
     
     section.forecast {
-        margin-top: 10px;
+        
+        margin-top: 20px;
+        margin-left: 250px;        
         padding: 20px;
         border: 1px solid black;
         border-radius: 8px;
-        display: inline-block; }  /* show the 10-day forecast with the medium view and up */
+        display: inline-block;
+        background-color: #fff;
+    }  /* show the 10-day forecast with the medium view and up */
 
     .forecast td, .forecast th {
         padding: .5em;

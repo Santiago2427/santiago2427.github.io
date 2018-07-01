@@ -1,6 +1,6 @@
 /* eslint-env browser */
 var feelslike2object = new XMLHttpRequest();
-feelslike2object.open('get', 'http://api.openweathermap.org/data/2.5/weather?id=4409896&appid=87b778d905abd567949a99734f93fcb2&units=imperial',true);
+feelslike2object.open('get', '//api.openweathermap.org/data/2.5/weather?id=4409896&appid=87b778d905abd567949a99734f93fcb2&units=imperial',true);
 
 feelslike2object.send();
 

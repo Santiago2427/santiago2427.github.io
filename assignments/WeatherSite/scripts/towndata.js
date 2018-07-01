@@ -24,6 +24,8 @@ function showCitydata(jsonObj) {
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myList = document.createElement('ul');
                 
 
     myH2.textContent = cities[i].name;
@@ -31,6 +33,14 @@ function showCitydata(jsonObj) {
     myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
     myPara2.textContent = 'Current Population: ' + cities[i].currentPopulation;
     myPara3.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
+    myPara4.textContent = 'Upcoming Events: ';
+            
+        var cityEvents = cities[i].events;
+            for (var j = 0; j < cityEvents.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = cityEvents[j];
+                myList.appendChild(listItem);
+            }
 
                 
     myArticle.appendChild(myH2);
@@ -38,6 +48,8 @@ function showCitydata(jsonObj) {
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myList);
                 
     section.appendChild(myArticle);
   }

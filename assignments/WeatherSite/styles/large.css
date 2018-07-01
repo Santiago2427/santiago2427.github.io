@@ -22,7 +22,7 @@
     
 }
     .gallery:hover {
-        box-shadow: 5px 10px 15px red;
+        box-shadow: 5px 10px 15px black;
         
     }
     
@@ -48,5 +48,6 @@
     section.info article:hover {
         box-shadow: 5px 10px 15px blue;
     }
-     
+    
+      
   }

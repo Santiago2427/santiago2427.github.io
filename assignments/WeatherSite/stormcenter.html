@@ -44,10 +44,10 @@
                 <form method="get" action="thankyou.html" id="wrform">
                     <fieldset>
                         <legend>Information about you</legend>
-                        <label class="top">Full Name* <input type="text" name="fname" placeholder="Type Your Full name" required></label>
-                        <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Full Name* <input type="text" name="fname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Type Your Full name" required></label>
+                        <label class="top">Phone Number* <input type="tel" name="phone"  maxlength="10" placeholder="1235551234" required></label>
                         <label class="top">Email* <input type="email" name="email" placeholder="someone@example.com" required></label>
-                        <label class="top">Zip Code* <input type="number" name="zcode" placeholder="12345" required></label>
+                        <label class="top">Zip Code* <input type="text" name="zcode" pattern="[0-9]{5}" title="Five digit zip code" placeholder="12345" required></label>
                     </fieldset>
                     
                     <fieldset>
@@ -145,7 +145,6 @@
                         <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li>
                         <li><a href="#" class="fa fa-google"></a></li>
-                        <!--<li><a href="#" class="fa fa-linkedin"></a></li>-->
                         <li><a href="#" class="fa fa-youtube"></a></li>
                         <li><a href="#" class="fa fa-instagram"></a></li>
                     </ul>
@@ -167,7 +166,6 @@
         </footer>
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
-            <script src="scripts/windchill.js"></script>
             <script src="scripts/rating.js"></script>
     </body>
     
