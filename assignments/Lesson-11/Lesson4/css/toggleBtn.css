@@ -1,0 +1,92 @@
+h1.title {
+    text-align: left;
+    margin-left: 10px;
+ }
+
+.return {
+    font-size: 25px
+}
+
+.return {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 10px;
+    width: 96%;
+    max-width: 12rem;
+    box-shadow: 0 9px #999;
+    -webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+.return:hover, form input.submitBtn:focus{
+   -webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+.return:active
+{
+	color: #fff;
+	text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+	box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	-webkit-animation: none;
+	animation: none;
+}
+
+.container {
+	position:absolute;
+	width:480px;
+	height:25px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+}
+
+.toggleBtn {
+	position: relative;
+	width: 100px;
+	height: 17px;
+	border: 3px solid rgb(213, 66, 66);
+	padding: 25px;
+	top:0px;
+	background: rgb(255, 98, 98);
+	color: #FFF;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 15px;
+	box-shadow: 2px 6px 1px rgb(213, 66, 66);
+	-webkit-transition: border 200ms, background 200ms, box-shadow 200ms, top 200ms;
+	   -moz-transition: border 200ms, background 200ms, box-shadow 200ms, top 200ms;
+	    -ms-transition: border 200ms, background 200ms, box-shadow 200ms, top 200ms;
+	     -o-transition: border 200ms, background 200ms, box-shadow 200ms, top 200ms;
+	        transition: border 200ms, background 200ms, box-shadow 200ms, top 200ms;
+}
+
+.toggleOn {
+	border: 3px solid rgb(86, 185, 86);
+	background: rgb(70, 225, 70);
+	box-shadow: 0px 0px 1px rgb(0,0,0);
+	top: 6px;
+}

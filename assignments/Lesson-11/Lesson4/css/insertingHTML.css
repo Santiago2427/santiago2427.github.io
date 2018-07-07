@@ -1,0 +1,119 @@
+h1.title {
+    text-align: left;
+    margin-left: 10px;
+ }
+
+.return {
+    font-size: 25px
+}
+
+.return {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 10px;
+    width: 96%;
+    max-width: 12rem;
+    box-shadow: 0 9px #999;
+    -webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+.return:hover, form input.submitBtn:focus{
+   -webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+.return:active
+{
+	color: #fff;
+	text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+	box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	-webkit-animation: none;
+	animation: none;
+}
+
+
+.container {
+	position:absolute;
+	width:820px;
+	height:610px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:auto;
+	border:1px solid black;
+}
+
+.box1	{
+	position: absolute;
+	border: 1px solid rgba(0,0,0,0.3);
+	top: 47px;
+	left: 66px;
+	width: 296px;
+	height: 495px;
+	background-color: rgb(243, 162, 162);
+	padding:10px;
+}
+
+.buttonHolder {
+	position: absolute;
+	/*border: 1px solid red;*/
+	width: 61px;
+	height: 135px;
+	left: 387px;
+	top: 240px;
+}
+
+button#LeftToRight {
+	position: absolute;
+	top: 23px;
+	left: 11px;
+	padding: 10px;
+}
+
+button#RightToLeft {
+	position: absolute;
+	top: 76px;
+	left: 11px;
+	padding: 10px;
+}
+
+.box2	{
+	position: absolute;
+	border: 1px solid rgba(0,0,0,0.3);
+	top: 47px;
+	left: 454px;
+	width: 296px;
+	height: 495px;
+	background-color: rgb(162, 243, 192);
+	padding:10px;
+}
+
+p {
+	font-size: 15px;
+	font-family: serif;
+}
+
+h1 {
+	font-size: 19px;
+}
