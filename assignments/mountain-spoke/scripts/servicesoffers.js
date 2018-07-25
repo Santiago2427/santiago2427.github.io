@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://santiago2427.github.io/mountain-spoke/data/servicedata.json';
+var requestURL = 'https://santiago2427.github.io/assignments/mountain-spoke/data/servicedata.json';
 var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
