@@ -5,12 +5,12 @@
     "banner": "Recommended every 12 months",
     "details" : [
       "Head to toe adjustments on the bike.",
-      "Drive train is removed, thoroughly scrubbed in our solvent tank and relubed.", 
-      "Front and rear derailleurs adjusted for smoother shifting.",
+      "Drive train is removed, thoroughly scrubbed.", 
+      "Front and rear derailleurs adjusted.",
       "Headset and bottom bracket adjusted.",
       "Rims, hubs, and spokes adjusted, wheel trued.",
-      "New shifter cables and housing installed for smooth sailing.",
-      "New brake cables and housing installed for smooth and reliable braking."
+      "New shifter cables and housing installed.",
+      "New brake cables and housing installed."
     ]
   },
   {
@@ -19,7 +19,7 @@
     "details" : [
       "Head to toe adjustments on the bike.",
       "Drive train is degreased, cleaned and relubed.",  
-      "Front and rear derailleurs adjusted for smoother shifting.",
+      "Front and rear derailleurs adjusted.",
       "Headset and bottom bracket adjusted.",
       "Spokes adjusted and wheels trued."
     ]
@@ -29,7 +29,8 @@
     "banner": "Recommended every 6-12 months.",
     "details" : [
        "Includes labor and parts.",
-       "Installetion of a new fork, oil, dust wipers, shock oil and air sleeve."
+       "Installation of a new fork.",
+       "Oil, dust wipers, shock oil and air sleeve."
     ]
   }
  ]
