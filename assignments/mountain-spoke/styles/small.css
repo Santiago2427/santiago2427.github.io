@@ -400,7 +400,14 @@ footer .contact {
     content: "";
     display: table;
     clear: both;
+}/************Service page****************/
+
+.service-title {
+    text-align: center;
+    margin-top: 20px;
 }
+
+
 
 /************Event page****************/
 
