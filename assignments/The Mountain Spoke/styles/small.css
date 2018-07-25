@@ -1,0 +1,529 @@
+/** { box-sizing: border-box;}   This wildcard applies to all elements ensuring a box layout model */
+/* { box-sizing: border-box; }*/
+
+html {
+    
+    overflow-x: hidden;
+}
+
+/************Body****************/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    background-color: rgb(128,128, 0, 0.4);
+             
+}
+
+/************Header****************/
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0;
+    overflow: hidden;
+
+}
+
+header h1 {
+       
+    color: #000;
+    font-weight: 700;
+    margin-bottom: -10px;
+    position: relative;
+    font-size: 1.8em;
+    margin: 20px;
+            
+}
+
+header .logo {
+    
+    float: left;
+    margin: 1rem 2% 0 1rem;
+  
+}
+
+header .heading {
+ 
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 2px;
+      
+}
+
+header .heading h1 {
+    
+    color: #000;
+    margin-bottom: 0px;
+}
+
+header .heading h2 {
+    
+    color: #000;
+    font-size: .9rem;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+/************Back to Top Button****************/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 47px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/************Nav****************/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #999;
+}
+
+nav {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+        
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #fff; /*rgba(21, 15, 15, 1);*/
+    font-weight: 700;
+    border-top: 1px solid rgba(0,0,255,0.3)
+            
+}
+
+nav ul li.active a{
+    background-color: rgba(239, 31, 31, 0.7);
+    
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+nav ul.hide {display: none;}
+
+/************Main****************/
+
+/*main {
+   
+    padding: 0 2%;
+    min-height: 10rem;
+    background-color: #fff;
+    box-shadow: 15px 10px 15px 10px RGB(128, 128, 128);
+}*/
+
+.info h3, p {
+       
+        color: #000;
+        margin-left: 2%;
+        
+
+    }
+
+.container {
+    margin: 0 auto;
+    padding: 37px 37px
+    
+    
+}
+
+.offer {
+    
+    margin-bottom: 10px;
+    grid-template-columns: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.offer img {
+    width: 100%;
+}
+
+main div h5 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    
+}
+
+/*main picture.intro {width: 50%; margin: 0;}*/
+main picture.intro img {width: 100%;}
+
+main .image-welcome {
+    
+    float:left;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px black;
+    overflow: hidden;
+    margin-top: 2%;
+    
+     
+}
+
+main .image-article {
+    
+    float:left;
+    overflow: hidden;
+    margin: auto;
+    padding: 15px;
+}
+
+
+main .welcome {
+    padding: 15px;
+    margin-left: 6px;
+}
+main .town-article {
+    
+    padding: 15px;
+    margin-left: 6px;
+}
+
+main .title-article {
+    
+    margin-top: 60px;
+}
+
+main picture img{
+    
+    margin-left: auto;
+    
+}
+
+main h2, h3 {
+    
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-left: .5em;
+}
+
+#summer-sales {
+    /*background-color:#222;*/
+    margin-top: 40px;
+    text-align:center;
+    font-family: "Open Sans";
+    color: #f5f5f5;
+    text-shadow:
+    0px -2px 4px #fff,
+    0px -2px 10px #FF3,
+    0px -10px 20px #F90,
+    0px -20px 40px #C33;
+    font-size: 40px;
+    
+}
+
+
+
+/************Footer****************/
+
+#bsw-footer{
+   
+    font-size: 13px;
+	border-top: 1px solid #97999b;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 26px 26px;
+    width: 100%;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    background: rgb(76,76,76); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    
+}     
+
+.footer-top {
+    
+    margin: auto;
+    width: 50%;
+    display: flex;
+}
+
+.social-link {
+    
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.social-footer li {
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fa {
+    
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    
+    /*background: #125688;*/
+    font-size: 40px;
+    color:white;
+}
+
+footer .contact {
+    
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact address {
+    
+    
+    font-size: 14px;
+    margin-top: 20px;
+    color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.footer-bar {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+	padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+ }
+
+.footer-bar p {
+    
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.footer-bar a {
+    
+    color: #fff;
+    padding: 10px;
+  }
+
+/************Clearfix Hack****************/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/************Event page****************/
+
+.event-header {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.event-heading h1 {
+    margin-bottom: 0;
+    
+}
+
+.event-heading h2 {
+    margin-top: 0;
+}
+
+.event-container {
+    display: flex;
+    margin: 0 2% 0 2%;
+}
+
+.event-description {
+    max-width: 640px;
+    margin-left: 2%;
+    margin-right: 20px;
+}
+
+.wrap {
+    border-left: solid 3px #000;
+    
+}
+
+.detail-cover {
+    margin-left: 20px;
+}
+
+
+
+/************Form Event and Contact page****************/
+
+#erform {
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.qcform {
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ form label.cp input, form label.cp textarea, form label.cp select {
+            /*width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;*/
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 20rem;
+        background-color: rgba(0,0,0,0.1);
+            
+    }
+    
+    form label.cp textarea {
+        max-width: 28rem;
+        margin-bottom: 20px;
+
+    }
+
+    input[type=submit] {
+            /*background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;*/
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+        box-shadow: 0 9px #999;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+        }
+    
+    form label.cp input:required {
+        border-left: red solid 6px;
+    }
+
+    form label.cp input:required:valid {
+        border-left: green solid 6px;
+    }
+
+
+ .column, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+.map-container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+
+
+
+main {
+    overflow: hidden;
+}
+

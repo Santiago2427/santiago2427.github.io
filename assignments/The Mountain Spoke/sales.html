@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Springfield page</title>
+        <meta name="description" content="Weather forecast for the City of Springfield">
+        <link rel="icon" type="image/png" href="images/myicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/normalize.css"/>
+        <link rel="stylesheet" href="styles/small.css"/>
+        <link rel="stylesheet" href="styles/medium.css"/>   
+        <link rel="stylesheet" href="styles/large.css"/>
+
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
+
+        <div class="tour-header-container">
+            <div>
+                <header class="clearfix">
+                    <figure class="logo"> 
+                      <img src="images/mountainbikelogo1.png" alt="Site Logo" >  
+                    </figure>
+                    <div class="heading">
+                        <h1>Mountain Spoke</h1>
+                        <h2>"When riding is life"</h2>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <nav class="clearfix" id=navbar>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="smallNav" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adventuretours.html">Tours</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li class="active"><a href="sales.html">Sales</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>		
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div>
+                <picture class>
+                    <source media="(max-width: 500px)" srcset="images/franklin-small.jpg"> 
+                    <source media="(max-width: 800px)" srcset="images/franklin-medium.jpg"> 
+                    <source media="(max-width: 1100px)" srcset="images/sale-image.jpg">
+                    <img src="images/sale-image.jpg" alt="Rider in a trail"> 
+             </picture>
+             </div>
+            <h2>City of Springfield</h2>
+             <picture class="intro">
+                <source media="(max-width: 500px)" srcset="images/springfieldsmall.jpg"> 
+                <source media="(max-width: 800px)" srcset="images/springfieldmedium.jpg"> 
+                <source media="(max-width: 1100px)" srcset="images/springfieldlarge.jpg">
+                <img src="images/springfieldlarge.jpg" alt="Sunny landscape"> 
+             </picture>
+            <h2>Weather Summary</h2>
+            <section class="weather-summary">
+                
+                <div class="current">
+                    <p class="banner">Today Weather conditions</p>
+                    <p class="describe"><span id="detail"> description placeholder</span></p>
+                    <picture>
+                    <img src="images/placeholder.png" alt="Shining Sun" class="symbol" id="weather_icon">
+                    </picture>
+                    <p class="ctemp"><span class="today" id="currentTemp">Current temp Placeholder</span><sup>&deg;F</sup></p>
+                    <p class="feel">Feels like: <span id="windchill">Feels like Placeholder</span></p>
+                    <p class="temph">High: <span id="highT">High temp Placeholder</span>&deg;</p>  
+                    <p class="templ">Low: <span id="lowT">Low temp Placeholder</span>&deg;</p>  
+                    <p class="prec">Precipitation: 0%</p>  
+                    <p class="wind">Wind Speed: <span id="wSpeed">Low temp Placeholder</span> mph</p>
+                    
+                </div>           
+            </section>
+            
+            <section class="forecast">
+                <h2>Five Day Forecast</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tueday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td><span class="" id="day1temp">00</span>&deg;F</td>
+                            <td><span class="" id="day2temp">00</span>&deg;F</td>
+                            <td><span class="" id="day3temp">00</span>&deg;F</td>
+                            <td><span class="" id="day4temp">00</span>&deg;F</td>
+                            <td><span class="" id="day5temp">00</span>&deg;F</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article class="clearfix">
+                
+                    <figure class="image-article"> 
+                        <img src="images/starwar.jpg" alt="Star War Image" >
+                    </figure>
+                <h2>Star Wars Trivia Event.</h2>
+                <p class="town-article">
+                    Star Wars Trivia in the Park from 1-2 p.m. at Sequiota Park on Lone Pine Avenue. Trivia will include the movies and a few from the books. $5 admission go towards helping sexual assault victims through Me Too Springfield. 
+                </p> <a href="#">Full Story</a>
+                
+            </article>		  
+
+        </main>
+
+        <footer class="clearfix" id=bsw-footer>
+            <div class="footer-top">
+                
+                <div class="social-footer">
+                    <ul>
+                        <li class="social-link">Connect With Us</li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <address>
+                    BlueSky Weather<br>
+                    123 Main St.<br>
+                    Anytown, US 99999<br>
+                    Phone: (999)-999-9999
+                </address>
+            </div>
+            <div class="footer-bar">
+                <p><a href="">Terms of Use</a><a href="">Privacy Policy</a></p>
+                <P>&copy; 2018 by BlueSky Weather, Inc. All Rights Reserved | <span id="currentdate">Current Date Placeholder</span>
+                </P>
+            </div>
+        </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/upbtn.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather forecast for the City of Franklin">
+        <meta name="keywords" content="Bike, Montana, Bike Tours, School Project">
+        <meta name="author" content="Santiago Diaz">
+        <title>Mountain Spoke | tours</title>
+        <link rel="icon" type="image/png" href="images/myicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/normalize.css"/>
+        <link rel="stylesheet" href="styles/small.css"/>
+        <link rel="stylesheet" href="styles/medium.css"/>   
+        <link rel="stylesheet" href="styles/large.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
+        
+        <div class="header-container">
+            <div>
+                <header class="clearfix">
+                    <figure class="logo"> 
+                      <img src="images/mountainbikelogo1.png" alt="Site Logo" >  
+                    </figure>
+                    <div class="heading">
+                        <h1>Mountain Spoke</h1>
+                        <h2>"When riding is life"</h2>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <nav class="clearfix" id=navbar>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="smallNav" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="adventuretours.html">Tours</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>		
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div class="tour-image-container">
+                <picture class>
+                    <source media="(max-width: 500px)" srcset="images/franklin-small.jpg"> 
+                    <source media="(max-width: 800px)" srcset="images/tour-image1.jpg"> 
+                    <source media="(max-width: 1100px)" srcset="images/tour-image2.jpg">
+                    <img src="images/tour-image2.jpg" alt="Rider in a trail"> 
+                </picture>
+                <div class="text-block-index"> 
+                    <h4>Adventure tours</h4>
+                    <p>Our goal is your complete satisfaction, plus we offer a dedicate support team where you can quickly find answers to all your questions related to our tours. Our guides can offer plenty of individual attention, and you're able to ride at the pace you want. Come and check us out. We guarantee you will like it or your money back.</p>
+                </div>
+             </div>
+            <section class="tour-trail">
+                <h2>Curly Lake Trail</h2>
+                <h3>Southwestern Montana, Beaverhead-Deerlodge National Forest.</h3>
+                <p>This trail is the long and main route of the Curly Lake Loop. The trail itself climbs a large ridge into Curly Lake basin, then climbs to an alpine plateau with huge views and a massive descent. The trail contours all the way north to connect to the Rock Creek Trail. This is a long trail with many technical sections and steep grades, on the way up and down, so be prepared with water and a snack!</p>
+                
+                <div class="ride-map-container">
+                    <div>
+                        <figure>
+                            <img src="images/curly-lake-trail.jpg" alt="Biking Trail Map">
+                        </figure>
+                    </div>
+                    <div class="lake-image">
+                        <figure>
+                           <img src="images/curly-lake-image.jpg" alt="Lake View">
+                           <table class="tour-trail-info">
+                                <tbody>  
+                                    <tr>
+                                        <td><div><h4>12.7 Miles</h4><h4>100% Singlestrack</h4></div></td>
+                                        <td><div><h4>2,547 Ascent</h4><h4>-2,726 Descent</h4></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><h4>8% Avg Grade(5&deg;)</h4><h4>24% Max Grade(13&deg;</h4></div></td>
+                                        <td><div><h4>9,881 High</h4><h4>7,670 Low</h4></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                    </div>
+                </div>           
+            </section>
+            <section class="tour-trail">
+                <h2>Essex Creek Trail</h2>
+                <h3>Northwestern Montana, Flathead National Forest.</h3>
+                <p>The west half of this trail is not typically ridden by mountain bikers. The east half from the divide down to the South Boulder Road is the final descent of the Curly Lake Loop and is a fantastic trail. It is loose and rocky most often with fast and open sections up higher and smoother, flowy sections near the creek bottom and a few tight switchbacks near the bottom.</p>
+                
+                <div class="ride-map-container">
+                    <div>
+                        <figure>
+                            <img src="images/essex-creek-trail.jpg" alt="Biking Trail Map">
+                        </figure>
+                    </div>
+                    <div class="lake-image">
+                        <figure>
+                           <img src="images/rock-creek-image.jpg" alt="Lake View">
+                           <table class="tour-trail-info">
+                                <tbody>  
+                                    <tr>
+                                        <td><div><h4>13.1 Miles</h4><h4>100% Singlestrack</h4></div></td>
+                                        <td><div><h4>2,874 Ascent</h4><h4>-2,949 Descent</h4></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><h4>12% Avg Grade(7&deg;)</h4><h4>27% Max Grade(15&deg;</h4></div></td>
+                                        <td><div><h4>7,756 High</h4><h4>5,813 Low</h4></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                    </div>
+                </div>           
+            </section>
+            
+
+        </main>
+
+        <footer class="clearfix" id=bsw-footer>
+            <div class="footer-top">
+                
+                <div class="social-footer">
+                    <ul>
+                        <li class="social-link">Connect With Us</li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <address>
+                    BlueSky Weather<br>
+                    123 Main St.<br>
+                    Anytown, US 99999<br>
+                    Phone: (999)-999-9999
+                </address>
+            </div>
+            <div class="footer-bar">
+                <p><a href="">Terms of Use</a><a href="">Privacy Policy</a></p>
+                <P>&copy; 2018 by BlueSky Weather, Inc. All Rights Reserved | <span id="currentdate">Current Date Placeholder</span>
+                </P>
+            </div>
+        </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            
+            <script src="scripts/upbtn.js"></script>
+            
+    </body>
+    
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather forecast for the City of Franklin">
+        <meta name="keywords" content="Bike, Montana, Bike Tours, School Project">
+        <meta name="author" content="Santiago Diaz">
+        <title>Mountain Spoke | Event</title>
+        <link rel="icon" type="image/png" href="images/myicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/normalize.css"/>
+        <link rel="stylesheet" href="styles/small.css"/>
+        <link rel="stylesheet" href="styles/medium.css"/>   
+        <link rel="stylesheet" href="styles/large.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
+
+        <div class="header-container">
+            <div>
+                <header class="clearfix">
+                    <figure class="logo"> 
+                      <img src="images/mountainbikelogo1.png" alt="Site Logo" >  
+                    </figure>
+                    <div class="heading">
+                        <h1>Mountain Spoke</h1>
+                        <h2>"When riding is life"</h2>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <nav class="clearfix" id=navbar>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="smallNav" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adventuretours.html">Tours</a></li>
+                        <li class="active"><a href="event.html">Event</a></li>
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>		
+                </nav>
+            </div>
+        </div>
+        
+        <main>
+            <div>
+                <picture class>
+                    <source media="(max-width: 500px)" srcset="images/franklin-small.jpg"> 
+                    <source media="(max-width: 800px)" srcset="images/event-image1.jpg"> 
+                    <source media="(max-width: 1100px)" srcset="images/event-image2.jpg">
+                    <img src="images/event-image2.jpg" alt="Rider in a trail"> 
+                </picture>
+                <div class="text-block-index"> 
+                    <h4>Cycle the Continental Divide Event</h4>
+                    <p>Riding is more fun when it done in the nature and that is why annualy we organize the Cycle the Continental Divide ride. Where you will enjoy the beautifull landscape of the Flathead National Forest.</p>
+                </div>
+             </div>
+            <section class="event-promotion">
+                <div class="event-header">
+                    <figure class="logo"> 
+                        <img src="images/mountainbikelogo1.png" alt="Site Logo" >  
+                    </figure>
+                    <div class="event-heading">
+                        <h1>Mountain Spoke</h1>
+                        <h2>"When riding is life"</h2>
+                    </div>
+                </div>
+                <div class="event-container">
+                   <div class="event-description">
+                        <h2>Cycle the Continental Divide Annual Event</h2>
+                            <p>Save the date for the 2019 Cycle the Continental Divide Ride on June 15, 2019! This unique event features mountain-based routes that allow cyclists to discover beautiful landscapes while riding around the different trails selected in the Flathead national Forest from Montana within an enjoyable, supportive atmosphere. In the heart of the Rocky Mountains, west of the continental divide and just south of the Canadian border, lies the 2.4 million acre Flathead National Forest. Three routes are offered: 75, 50 and 25 miles. Turn by turn, the Cycle the Continental Divide Ride connects cyclists with numerous lakes, streams, and rivers to enjoy. Prices are $50, $70, and $95 respectively. Are you signed up? Fill out the form below to enter.</p>
+                    </div>
+                    <div class="wrap">
+                        <div class="detail-cover">
+                            <div class="event-detail">
+                                <h3>Event Details</h3>
+                            </div>
+                            <div class="detail-info">
+                                    <h4>When:</h4>
+                                    <h5>Saturday, June 15, 2019</h5>
+                            </div>
+                            <div class="detail-info">
+                                    <h4>Time:</h4>
+                                    <h5>06:00am - 04:00pm</h5>
+                             </div>
+                             <div class="detail-info">
+                                    <h4>Location:</h4>
+                                    <h5>650 Wolf Pack Way, Kalispell, MT 59901</h5>
+                             </div>
+                         </div>
+                     </div>
+                        
+                    </div>
+                <div class="registration-event-container">
+                    <h2>Registration Form</h2>
+                <form method="get" action="thankyou.html" id="erform">
+                    <fieldset>
+                        <legend>Enter your information below</legend>
+                        <label class="cp">Full Name* <input type="text" name="fname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Type Your Full name" required></label>
+                        <label class="cp">Date of Birth<input type="date" name="birthdate" required></label>
+                        <label class="cp">Phone Number* <input type="tel" name="phone"  maxlength="10" placeholder="1235551234" required></label>
+                        <label class="cp">Email* <input type="email" name="email" placeholder="someone@example.com" required></label>
+                        <label class="cp">Zip Code* <input type="text" name="zcode" pattern="[0-9]{5}" title="Five digit zip code" placeholder="12345" required></label>
+                        <label class="cp">Home State
+                                <select name="eventstate">
+                                    <option value="">Please Select </option>
+                                    <option value="Alabama,AL">Alabama,AL</option>
+                                    <option value="Alaska,AK">Alaska,AK</option>
+                                    <option value="Arizona,AZ">Arizona,AZ</option>
+                                    <option value="Arkansas,AR">Arkansas,AR</option>
+                                    <option value="California,CA">California,CA</option>
+                                    <option value="Colorado,CO">Colorado,CO</option>
+                                    <option value="Connecticut,CT">Connecticut,CT</option>
+                                    <option value="Delaware,DE">Delaware,DE</option>
+                                    <option value="Florida,FL">Florida,FL</option>
+                                    <option value="Georgia,GA">Georgia,GA</option>
+                                    <option value="Hawaii,HI">Hawaii,HI</option>
+                                    <option value="Idaho,ID">Idaho,ID</option>
+                                    <option value="Illinois,IL">Illinois,IL</option>
+                                    <option value="Indiana,IN">Indiana,IN</option>
+                                    <option value="Iowa,IA">Iowa,IA</option>
+                                    <option value="Kansas,KS">Kansas,KS</option>
+                                    <option value="Kentucky,KY">Kentucky,KY</option>
+                                    <option value="Louisiana,LA">Louisiana,LA</option>
+                                    <option value="Maine,ME">Maine,ME</option>
+                                    <option value="Maryland,MD">Maryland,MD</option>
+                                    <option value="Massachusetts,MA">Massachusetts,MA</option>
+                                    <option value="Michigan,MI">Michigan,MI</option>
+                                    <option value="Minnesota,MN">Minnesota,MN</option>
+                                    <option value="Mississippi,MS">Mississippi,MS</option>
+                                    <option value="Missouri,MO">Missouri,MO</option>
+                                    <option value="Montana,MT">Montana,MT</option>
+                                    <option value="Nebraska,NE">Nebraska,NE</option>
+                                    <option value="Nevada,NV">Nevada,NV</option>
+                                    <option value="New Hampshire,NH">New Hampshire,NH</option>
+                                    <option value="New Jersey,NJ">New Jersey,NJ</option>
+                                    <option value="New Mexico,NM">New Mexico,NM</option>
+                                    <option value="New York,NY">New York,NY</option>
+                                    <option value="North Carolina,NC">North Carolina,NC</option>
+                                    <option value="North Dakota,ND">North Dakota,ND</option>
+                                    <option value="Ohio,OH">Ohio,OH</option>
+                                    <option value="Oklahoma,OK">Oklahoma,OK</option>
+                                    <option value="Oregon,OR">Oregon,OR</option>
+                                    <option value="Pennsylvania,PA">Pennsylvania,PA</option>
+                                    <option value="Rhode Island,RI">Rhode Island,RI</option>
+                                    <option value="South Carolina,SC">South Carolina,SC</option>
+                                    <option value="South Dakota,SD">South Dakota,SD</option>
+                                    <option value="Tennessee,TN">Tennessee,TN</option>
+                                    <option value="Texas,TX">Texas,TX</option>
+                                    <option value="Utah,UT">Utah,UT</option>
+                                    <option value="Vermont,VT">Vermont,VT</option>
+                                    <option value="Virginia,VA">Virginia,VA</option>
+                                    <option value="Washington,WA">Washington,WA</option>
+                                    <option value="West Virginia,WV">Hail/Tornado</option>
+                                    <option value="Wisconsin,WI">Wisconsin,WI</option>
+                                    <option value="Wyoming,WY">Wyoming,WY</option>
+                                    
+                                </select>
+                            </label>
+                            <div>Please Comment with any additional information</div>
+                            <label class="cp"><textarea class="textinput" rows="4" cols="40" name="comment" form="wrform"></textarea></label>
+                            <input type="submit" value="Register Me" class="submitBtn">
+                    </fieldset>
+                            
+                </form>
+                </div>
+                
+            </section>
+
+        </main>
+
+        <footer class="clearfix" id=bsw-footer>
+            <div class="footer-top">
+                
+                <div class="social-footer">
+                    <ul>
+                        <li class="social-link">Connect With Us</li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <address>
+                    BlueSky Weather<br>
+                    123 Main St.<br>
+                    Anytown, US 99999<br>
+                    Phone: (999)-999-9999
+                </address>
+            </div>
+            <div class="footer-bar">
+                <p><a href="">Terms of Use</a><a href="">Privacy Policy</a></p>
+                <P>&copy; 2018 by BlueSky Weather, Inc. All Rights Reserved | <span id="currentdate">Current Date Placeholder</span>
+                </P>
+            </div>
+        </footer>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/scrollmagic-animation.js"></script>
+            <script src="scripts/upbtn.js"></script>
+            
+    </body>
+
+</html>
