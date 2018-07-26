@@ -14,16 +14,18 @@ body {
     font-size: 16px;
     font-family: 'Noto Serif', serif;
     font-weight: 400;
-    background-color: rgba(60, 60, 60, 0.3);
-             
+                
+}
+.bg {
+   
 }
 
-.watermark {
+.watermark-home-bg {
   display: block;
   position: relative;
 }
 
-.watermark::after {
+.watermark-home-bg::after {
   content: "";
  background:url(../images/bike-mobile.jpg);
   opacity: 0.2;
@@ -35,38 +37,80 @@ body {
   z-index: -1;   
 }
 
-/*.home-bg {
-            background-image: url("../images/bike2.jpg") !important;
-            background-repeat: no-repeat !important;
-        }
+.watermark-tour-bg {
+  display: block;
+  position: relative;
+}
 
-        .tour-bg {
-            background-image: url("../images/tour-image.jpg") !important;
-            background-repeat: no-repeat !important;
+.watermark-tour-bg::after {
+  content: "";
+ background:url(../images/tour-mobile.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
-        }
+.watermark-event-bg {
+  display: block;
+  position: relative;
+}
 
-        .event-bg {
-            background-image: url("../images/event-image.jpg") !important;
-            background-repeat: no-repeat !important;
+.watermark-event-bg::after {
+  content: "";
+ background:url(../images/event-mobile.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
-        }
+.watermark-sales-bg {
+  display: block;
+  position: relative;
+}
 
-        .sale-bg {
-            background-image: url("../images/sale-image.jpg") !important;
-            background-repeat: no-repeat !important;
+.watermark-sales-bg::after {
+  content: "";
+ background:url(../images/event-mobile.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
-        }
+.watermark-service-bg {
+  display: block;
+  position: relative;
+}
 
-        .service-bg {
-            background-image: url("../images/service-image.jpeg") !important;
-            background-repeat: no-repeat !important;
+.watermark-service-bg::after {
+  content: "";
+ background:url(../images/service-mobile.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
-        }*/
 
 /************Header****************/
 
+
 header {
+    
     
     display: flex;
     flex-direction: row;
@@ -77,6 +121,7 @@ header {
 
 header h1 {
        
+    
     color: #000;
     font-weight: 700;
     margin-bottom: -10px;
@@ -95,7 +140,8 @@ header .logo {
 
 header .heading {
  
-    display: flex;
+    
+   display: flex;
     flex-flow: column;
     margin-bottom: 2px;
       
@@ -103,11 +149,13 @@ header .heading {
 
 header .heading h1 {
     
+    
     color: #000;
     margin-bottom: 0px;
 }
 
 header .heading h2 {
+    
     
     color: #000;
     font-size: .9rem;
@@ -525,6 +573,7 @@ footer .contact {
             margin-bottom: 16px;
             resize: vertical;*/
         display: block;
+        margin-bottom: 15px;
         font-size: 1rem;
         border: solid 1px #999;
         border-radius: 4px;
