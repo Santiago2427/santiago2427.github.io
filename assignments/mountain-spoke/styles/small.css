@@ -18,6 +18,52 @@ body {
              
 }
 
+.watermark {
+  display: block;
+  position: relative;
+}
+
+.watermark::after {
+  content: "";
+ background:url(../images/bike-mobile.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/*.home-bg {
+            background-image: url("../images/bike2.jpg") !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .tour-bg {
+            background-image: url("../images/tour-image.jpg") !important;
+            background-repeat: no-repeat !important;
+
+        }
+
+        .event-bg {
+            background-image: url("../images/event-image.jpg") !important;
+            background-repeat: no-repeat !important;
+
+        }
+
+        .sale-bg {
+            background-image: url("../images/sale-image.jpg") !important;
+            background-repeat: no-repeat !important;
+
+        }
+
+        .service-bg {
+            background-image: url("../images/service-image.jpeg") !important;
+            background-repeat: no-repeat !important;
+
+        }*/
+
 /************Header****************/
 
 header {
@@ -129,6 +175,15 @@ nav ul {
     padding: 0;
     margin: 0;
         
+}
+
+nav ul li {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87ceeb+1,7db9e8+100 */
+    background: rgb(135,206,235); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(135,206,235,1) 1%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(135,206,235,1) 1%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(135,206,235,1) 1%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87ceeb', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
 nav ul li a {
