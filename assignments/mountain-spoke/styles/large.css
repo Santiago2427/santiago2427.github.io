@@ -37,6 +37,7 @@
     }
     
     .text-block-index {
+        top: 200px;
         font-size: 30px;
         max-width: 500px;
     }
