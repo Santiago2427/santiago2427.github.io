@@ -462,9 +462,11 @@ main h2, h3 {
 
 #bsw-footer{
    
+    display: flex;
+    flex-wrap: wrap;
     font-size: 13px;
 	border-top: 1px solid #97999b;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     padding: 26px 26px;
@@ -476,13 +478,46 @@ main h2, h3 {
     background: linear-gradient(45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
     
-}     
+}
 
-.footer-top {
+.footer-left {
+    margin-left: 20px;
+}
+
+.footer-links {
     
-    margin: auto;
-    width: 50%;
-    display: flex;
+    color:  #ffffff;
+	margin: 20px ;
+	padding: 0;
+    width: 80%
+}
+
+.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-center{
+	width: 30%;
+    margin: 20px;
+    color: #fff;
+    padding: 20px
+        
+}
+
+.footer-center i.fa-envelope{
+    margin-top: 0;
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin-top:0;
 }
 
 .social-link {
@@ -493,10 +528,41 @@ main h2, h3 {
     font-weight: 700;
 }
 
-.social-footer li {
+.footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-right{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 20px;
+    padding: 20px
     
-    display: inline-block;
+}
+
+.footer-connect {
+	
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-connect span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.social-footer a {
+    
+    display: flex;
     vertical-align: middle;
+   
 }
 
 .fa {
@@ -523,42 +589,10 @@ main h2, h3 {
     color: white;
 }
 
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
 .fa-instagram {
     
-    /*background: #125688;*/
-    font-size: 40px;
+    background: #125688;
     color:white;
-}
-
-footer .contact {
-    
-    margin: 10px 0;
-    text-align: center;
-}
-
-.contact address {
-    
-    
-    font-size: 14px;
-    margin-top: 20px;
-    color: #fff;
-    overflow: hidden;
-    vertical-align: middle;
 }
 
 .footer-bar {
@@ -568,7 +602,7 @@ footer .contact {
     margin: auto;
     width: 50%;
 	padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     color: gray;
  }
@@ -576,10 +610,12 @@ footer .contact {
 .footer-bar p {
     
     color: #fff;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 5px;
 }
 
 .footer-bar a {
+    
     
     color: #fff;
     padding: 10px;

@@ -2,29 +2,22 @@
 <html lang="en-us">
     <head> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,">
-        <title>BlueSky Storm Center</title>
-        <meta name="description" content="Weather reporting page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather forecast for the City of Franklin">
+        <meta name="keywords" content="Bike, Montana, Bike Tours, School Project">
+        <meta name="author" content="Santiago Diaz">
+        <title>Mountain Spoke | Home</title>
         <link rel="icon" type="image/png" href="images/myicon.png">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+        <link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/normalize.css"/>
         <link rel="stylesheet" href="styles/small.css"/>
         <link rel="stylesheet" href="styles/medium.css"/>   
         <link rel="stylesheet" href="styles/large.css"/>
-        <script src="scripts/mapcontact.js"></script>
-        <!--<script>
-            function contactMap() {
-                  var myCenter = new google.maps.LatLng(45.676998,-111.042931);
-                  var mapCanvas = document.getElementById("map");
-                  var mapOptions = {center: myCenter, zoom: 12};
-                  var map = new google.maps.Map(mapCanvas, mapOptions);
-                  var marker = new google.maps.Marker({position:myCenter});
-                  marker.setMap(map);
-            }
-        </script>-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVnO2Y-9sR0UVOqI30nn9B_lwrEOGbZEc&callback=contactMap" async defer></script>
-          
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
 
     </head>
     <body>
@@ -46,43 +39,38 @@
                 <nav class="clearfix" id=navbar>
                     <button onclick="toggleMenu()">&#9776;</button>
                     <ul id="smallNav" class="hide">
-                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="adventuretours.html">Tours</a></li>
                         <li><a href="event.html">Event</a></li>
                         <li><a href="sales.html">Sales</a></li>
                         <li><a href="service.html">Service</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>		
                 </nav>
             </div>
         </div>
+        
+
         <main>
             
-        
-        
-        <div class="map-container">
-          <div style="text-align:center">
-            <h2>Questions or Comments</h2>
-            <p>If your want more information from any us our services please leave us a message or questions in the form below:</p>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div id="map" style="width:100%;height:500px"></div>
-            </div>
-            <div class="column">
-              <fieldset class="qcform">
-                  <form action="/action_page.php">
-                    <label Class="cp" for="fname">First Name*<input type="text" id="fname" name="firstname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Your name.." required></label>
-                    <label  Class="cp" for="lname">Last Name*<input type="text" id="lname" name="lastname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Your last name.." required></label>
-                    <label  Class="cp" for="Pnumber">Phone Number* <input type="tel" name="phone"  maxlength="10" placeholder="1235551234" required></label>
-                    <label Class="cp" for="comment">Comments<textarea id="comment" name="comment" placeholder="Add any comments here.." style="height:170px"></textarea></label>
-                    <input type="submit" value="Submit" class="submitBtn"> 
-                  </form>
-              </fieldset>
-            </div>
-          </div>
-        </div>
+            <ul>
+                
+                <li>https://www.mtbproject.com/trail/7007961/curly-lake</li>
             
+                <li>https://www.trailforks.com/trails/high-ore-connector/</li>
+            
+                <li>https://www.alltrails.com/us/montana/bozeman/mountain-biking</li>
+            
+                <li>https://www.jensonusa.com/</li>
+            
+                <li>https://sacredrides.com/</li>
+            
+                <li>https://bicyclewarehouse.com/</li>
+            
+                <li>https://www.bicyclecolorado.org/featured-event/denver-century-ride/</li>
+            </ul>
+            
+            <a href="../../index.html">Back to Portal</a>
         </main>
 
         <footer class="clearfix" id=bsw-footer>
@@ -135,7 +123,6 @@
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
             
-            <script src="scripts/upbtn.js"></script>
     </body>
     
 </html>
