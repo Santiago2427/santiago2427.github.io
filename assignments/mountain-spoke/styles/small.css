@@ -271,7 +271,7 @@ nav ul.hide {display: none;}
     }
 
     .tour-trail p {
-        margin: 0 15px 0 15px;
+        margin: 0 15px 15px 15px;
     }
 
     .ride-map-container {

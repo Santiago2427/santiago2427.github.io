@@ -2,9 +2,11 @@
 <html lang="en-us">
     <head> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,">
-        <title>BlueSky Storm Center</title>
-        <meta name="description" content="Weather reporting page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Form for leaving Contact Info">
+        <meta name="keywords" content="Bike, Montana, Bike Tours, School Project">
+        <meta name="author" content="Santiago Diaz">
+        <title>Mountain Spoke | Contact</title>
         <link rel="icon" type="image/png" href="images/myicon.png">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,16 +15,6 @@
         <link rel="stylesheet" href="styles/medium.css"/>   
         <link rel="stylesheet" href="styles/large.css"/>
         <script src="scripts/mapcontact.js"></script>
-        <!--<script>
-            function contactMap() {
-                  var myCenter = new google.maps.LatLng(45.676998,-111.042931);
-                  var mapCanvas = document.getElementById("map");
-                  var mapOptions = {center: myCenter, zoom: 12};
-                  var map = new google.maps.Map(mapCanvas, mapOptions);
-                  var marker = new google.maps.Marker({position:myCenter});
-                  marker.setMap(map);
-            }
-        </script>-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVnO2Y-9sR0UVOqI30nn9B_lwrEOGbZEc&callback=contactMap" async defer></script>
           
 
@@ -74,7 +66,7 @@
                   <form action="/action_page.php">
                     <label Class="cp" for="fname">First Name*<input type="text" id="fname" name="firstname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Your name.." required></label>
                     <label  Class="cp" for="lname">Last Name*<input type="text" id="lname" name="lastname" pattern="[a-zA-Z0-9\s]{5,}" title="Minimum 5 letters" placeholder="Your last name.." required></label>
-                    <label  Class="cp" for="Pnumber">Phone Number* <input type="tel" name="phone"  maxlength="10" placeholder="1235551234" required></label>
+                    <label  Class="cp">Phone Number* <input type="tel" name="phone"  maxlength="10" placeholder="1235551234" required></label>
                     <label Class="cp" for="comment">Comments<textarea id="comment" name="comment" placeholder="Add any comments here.." style="height:170px"></textarea></label>
                     <input type="submit" value="Submit" class="submitBtn"> 
                   </form>
@@ -92,13 +84,10 @@
 				<h3>Importance Links</h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="resource.html">Resource Page</a>
 					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-							
-				
+					<a href="https://www.youtube.com/watch?v=08r6m7JoHQI">Video of the Site</a>
+									
 			</div>
             <div class="footer-center">
 
@@ -134,7 +123,6 @@
         </footer>
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
-            
             <script src="scripts/upbtn.js"></script>
     </body>
     
