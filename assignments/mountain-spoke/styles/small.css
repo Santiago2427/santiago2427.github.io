@@ -631,8 +631,41 @@ footer .contact {
             padding: 10px;
         }
 
+/************sales page****************/
 
 
+.bike-sales {
+    margin-top: 100px;
+}
+
+
+
+#accordion {
+    margin: 0 5%;
+}
+
+.accordion-toggle {
+    font-size: 25px;
+    text-align: center;
+    background-color: aqua;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    
+}
+
+.accordion-content P{
+    font-size: 20px;
+      
+    
+}
+
+
+
+.accordion-content.default {display: block;}
 
 main {
     overflow: hidden;

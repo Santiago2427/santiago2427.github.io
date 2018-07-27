@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="styles/small.css"/>
         <link rel="stylesheet" href="styles/medium.css"/>   
         <link rel="stylesheet" href="styles/large.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
 
     </head>
     <body>
@@ -47,74 +49,53 @@
             <div>
                 <picture class>
                     <source media="(max-width: 500px)" srcset="images/franklin-small.jpg"> 
-                    <source media="(max-width: 800px)" srcset="images/franklin-medium.jpg"> 
-                    <source media="(max-width: 1100px)" srcset="images/sale-image.jpg">
-                    <img src="images/sale-image.jpg" alt="Rider in a trail"> 
-             </picture>
-             </div>
-            <h2>City of Springfield</h2>
-             <picture class="intro">
-                <source media="(max-width: 500px)" srcset="images/springfieldsmall.jpg"> 
-                <source media="(max-width: 800px)" srcset="images/springfieldmedium.jpg"> 
-                <source media="(max-width: 1100px)" srcset="images/springfieldlarge.jpg">
-                <img src="images/springfieldlarge.jpg" alt="Sunny landscape"> 
-             </picture>
-            <h2>Weather Summary</h2>
-            <section class="weather-summary">
-                
-                <div class="current">
-                    <p class="banner">Today Weather conditions</p>
-                    <p class="describe"><span id="detail"> description placeholder</span></p>
+                    <source media="(max-width: 800px)" srcset="images/images/sale-image2.jpg"> 
+                    <source media="(max-width: 1100px)" srcset="images/sale-image1.jpg">
+                    <img src="images/sale-image1.jpg" alt="Rider in a trail"> 
+                </picture>
+            </div>
+            <section class="bike-sales">
+                  
+              <div id="accordion">
+                  <h4 class="accordion-toggle">Diamondback Atroz 3</h4>
+                  <div class="accordion-content default">
                     <picture>
-                    <img src="images/placeholder.png" alt="Shining Sun" class="symbol" id="weather_icon">
+                        <source media="(max-width: 500px)" srcset="images/diamondback-atroz3-s.jpg"> 
+                        <source media="(max-width: 800px)" srcset="images/diamondback-atroz3-m.jpg"> 
+                        <source media="(max-width: 1100px)" srcset="images/diamondback-atroz3-l.jpg">
+                        <img src="images/diamondback-atroz3-l.jpg"> 
                     </picture>
-                    <p class="ctemp"><span class="today" id="currentTemp">Current temp Placeholder</span><sup>&deg;F</sup></p>
-                    <p class="feel">Feels like: <span id="windchill">Feels like Placeholder</span></p>
-                    <p class="temph">High: <span id="highT">High temp Placeholder</span>&deg;</p>  
-                    <p class="templ">Low: <span id="lowT">Low temp Placeholder</span>&deg;</p>  
-                    <p class="prec">Precipitation: 0%</p>  
-                    <p class="wind">Wind Speed: <span id="wSpeed">Low temp Placeholder</span> mph</p>
-                    
-                </div>           
-            </section>
-            
-            <section class="forecast">
-                <h2>Five Day Forecast</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sunday</th>
-                            <th>Monday</th>
-                            <th>Tueday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>  
-                        <tr>
-                            <td><span class="" id="day1temp">00</span>&deg;F</td>
-                            <td><span class="" id="day2temp">00</span>&deg;F</td>
-                            <td><span class="" id="day3temp">00</span>&deg;F</td>
-                            <td><span class="" id="day4temp">00</span>&deg;F</td>
-                            <td><span class="" id="day5temp">00</span>&deg;F</td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+                    <p>Retail Prices: $1.499.99</p>
+                    <p>With the Atroz 3, we took the proven and refined single-pivot full-suspension design and upped the ante in a big way. It’s a full RockShox affair when it comes to suspension, including the five-inch travel Recon RL air-sprung fork with 32mm stanchions and a quick release thru-axle. Likewise, we outfitted this model with SRAM’s NX 11-speed drivetrain — all the simplicity and durability of a single-ring drivetrain, with the low gearing you once needed a front derailleur to obtain. Shimano hydraulic disc brakes provide plenty of stopping power (particularly with 180mm rotors, front and rear), and we finished the bike off with a Race Face Chester bar and stem combo.</p>
+                  </div>
+                  <h4 class="accordion-toggle">Bicycle Warehouse Pique 2</h4>
+                  <div class="accordion-content">
+                      <picture>
+                        <source media="(max-width: 500px)" srcset="images/pique-2-l.jpg"> 
+                        <source media="(max-width: 800px)" srcset="images/pique-2-l.jpg"> 
+                        <source media="(max-width: 1100px)" srcset="images/pique-2-l.jpg">
+                        <img src="images/pique-2-l.jpg"> 
+                    </picture>
+                    <p>Retail Prices: $1.650.99</p>
+                    <p>Gone are the days when you need to choose a bike based on whether you want to go fast uphill or fast downhill. With low stand-over height, you’ll find greater balance on the bike during those tougher trail negotiations on rocky, rooty sections, uphill ledges and downhill drops. Pique inspires confident, agile downhill ripping and will help you tackle the uphill with traction aboard 120 mm of Maestro suspension. The 27.5-inch wheel size ensures that bike handling is still nimble and playful, while maintaining the stable cornering and bump-reducing qualities of a larger wheel size.</p>
+                  </div>
+                  <h4 class="accordion-toggle">Diamondback Release 1</h4>
+                  <div class="accordion-content">
+                      <picture>
+                        <source media="(max-width: 500px)"  srcset="images/diamondback-release1-s.jpg"> 
+                        <source media="(max-width: 800px)" srcset="images/diamondback-release1-m.jpg"> 
+                        <source media="(max-width: 1100px)" srcset="images/diamondback-release1-l.jpg">
+                        <img src="images/diamondback-release1-l.jpg"> 
+                    </picture>
+                    <p>Retail Prices: $1.890.99</p>
+                    <p>The Diamondback Release 1 begins with their Level Link suspension system, which isolates chain forces from trail inputs. Or to employ less tech-geek speak, the suspension doesn’t bob when you stomp on the pedals yet becomes extremely plush the moment your wheels start smacking roots and rocks. Thru-axles front, and rear add stiffness to improve steering precision when the trail gets rough. The 27.5” Diamondback Blanchard wheels are tubeless compatible, so you can install tubeless tires for even more traction and control. For all-day adventures, bike park outings, and all-round trail ripping, the Release 1 trail bike is ready for action.</p>
+                  </div>
+                </div>
             </section>
 
-            <article class="clearfix">
-                
-                    <figure class="image-article"> 
-                        <img src="images/starwar.jpg" alt="Star War Image" >
-                    </figure>
-                <h2>Star Wars Trivia Event.</h2>
-                <p class="town-article">
-                    Star Wars Trivia in the Park from 1-2 p.m. at Sequiota Park on Lone Pine Avenue. Trivia will include the movies and a few from the books. $5 admission go towards helping sexual assault victims through Me Too Springfield. 
-                </p> <a href="#">Full Story</a>
-                
-            </article>		  
+            
+             
+            
 
         </main>
 
@@ -149,6 +130,7 @@
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
             <script src="scripts/upbtn.js"></script>
+            <script src="scripts/slider.js"></script>
     </body>
     
 </html>
