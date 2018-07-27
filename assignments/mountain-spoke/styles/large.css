@@ -32,46 +32,7 @@
 
     }
 
-    .tour-trail h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .tour-trail p {
-        margin: 0 15px 0 15px;
-    }
-
-    .ride-map-container {
-
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .tour-trail-info {
-
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .tour-trail-info td {
-        padding: 15px;
-        text-align: left;
-
-    }
-
-    .tour-trail-info td:nth-child(odd) {
-        border-right: 1px solid #000;
-
-    }
-
-    .tour-trail-info h4 {
-
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    
+        
     .service-info {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -111,51 +72,7 @@
 
     }
 
-    .sales {
-
-        border: none;
-        background-color: #9c2c13;
-        color: white;
-        border-radius: 1rem;
-        margin-left: 5px;
-        margin-bottom: 10px;
-        padding: 5px 7px 0;
-        max-width: 7rem;
-        box-shadow: 0 5px #999;
-        -webkit-transition: all 150ms ease;
-        transition: all 150ms ease;
-    }
-
-    .sales:hover {
-       -webkit-animation: pulsate 1.2s linear infinite;
-        animation: pulsate 1.2s linear infinite;
-    }
-
-    @-webkit-keyframes pulsate
-    {
-        0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
-        50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
-        100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
-    }
-
-    @keyframes pulsate
-    {
-        0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
-        50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
-        100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
-    }
-
-    .sales:active
-    {
-        color: #fff;
-        text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
-        box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
-        -webkit-transform: translateY(3px);
-        transform: translateY(3px);
-        -webkit-animation: none;
-        animation: none;
-    }
-
+    
 
     main figure.intro {width: 100%; margin: 0;}
     main figure.intro img {width: 100%;}
