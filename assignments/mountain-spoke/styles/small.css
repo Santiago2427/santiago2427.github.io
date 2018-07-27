@@ -278,14 +278,15 @@ nav ul.hide {display: none;}
 
         display: flex;
         justify-content: space-around;
-        margin: 0 2%;
+        flex-wrap: wrap;
+        
 
     }
 
     .tour-trail-info {
 
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         align-content: center;
     }
 
