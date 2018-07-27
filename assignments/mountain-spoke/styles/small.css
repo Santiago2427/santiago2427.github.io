@@ -482,6 +482,7 @@ main h2, h3 {
 
 .footer-left {
     margin-left: 20px;
+    font-size: 20px;
 }
 
 .footer-links {
@@ -501,6 +502,7 @@ main h2, h3 {
 
 .footer-center{
 	width: 30%;
+    font-size: 20px;
     margin: 20px;
     color: #fff;
     padding: 20px
@@ -509,7 +511,7 @@ main h2, h3 {
 
 .footer-center i.fa-envelope{
     margin-top: 0;
-	font-size: 17px;
+	font-size: 40px;
 	line-height: 38px;
 }
 
@@ -553,7 +555,7 @@ main h2, h3 {
 .footer-connect span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -568,7 +570,7 @@ main h2, h3 {
 .fa {
     
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
